@@ -8,7 +8,7 @@ const AnecdoteList = () => {
       return state.anecdotes.filter(anecdote =>
         anecdote.content.toLocaleLowerCase().includes(state.filter.toLocaleLowerCase()))
     })
-   
+       
     const dispatch = useDispatch()
   
     const vote = (anecdote) => {
@@ -17,7 +17,6 @@ const AnecdoteList = () => {
       setTimeout(() => {
         dispatch({ type: 'notification/notificationReducer', payload: '' })
       }, 5000)
-
     }
 
     return (
