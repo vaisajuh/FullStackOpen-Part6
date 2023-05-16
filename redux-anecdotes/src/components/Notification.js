@@ -4,8 +4,6 @@ const Notification = () => {
 
   let notification = useSelector(state => state.notification)
 
-  console.log(notification)
-
   const style = {
     border: 'solid',
     padding: 10,
